@@ -1,0 +1,118 @@
+:root {
+    --modviolet: hsl(263, 55%, 52%);
+    --vdkgrayishblue: hsl(217, 19%, 35%);
+    --vdkblackishblue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --ltgray: hsl(0, 0%, 81%);
+    --ltgrayishblue: hsl(210, 46%, 95%);
+
+    --sans-serif: "Barlow Semi Condensed", Arial, sans-serif;
+    --base-size: 13px;
+    --scale: 1.25;
+    --h5: calc(var(--base-size) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 13px;
+    font-family: var(--sans-serif);
+    background-color: var(--ltgray);
+    color: var(--ltgrayishblue);
+}
+.container {
+    padding: 2rem;
+}
+.card {
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 0 auto 1rem auto;
+    position: relative;
+    max-width: 375px;
+}
+.card img {
+    border-radius: 50%;
+    border: 2px solid var(--ltgray);
+}
+.card h1 {
+    font-size: var(--base-size);
+    margin: 0;
+    margin-left: 1rem;
+}
+.card h4 {
+    font-weight: normal;
+    margin: 0;
+}
+.heading {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.verified {
+    font-weight: normal;
+    opacity: 50%;
+}
+.op70 {
+    opacity: 70%;
+}
+.card svg {
+    position: absolute;
+    top: 0%;
+    right: 5%;
+}
+.modviolet {
+    background-color: var(--modviolet);
+}
+.vdkgrayishblue {
+    background-color: var(--vdkgrayishblue);
+}
+.vdkblackishblue {
+    background-color: var(--vdkblackishblue);
+}
+.white {
+    background-color: var(--white);
+}
+.ltgray {
+    background-color: var(--ltgray);
+}
+.ltgrayishblue {
+    background-color: var(--ltgrayishblue);
+    color: black;
+}
+@media (min-width: 750px) {
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+@media (min-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template: 450px 450px / 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+        width: 1100px;
+    }
+    .card {
+    }
+    .one {
+    }
+    .two {
+    }
+    .three {
+    }
+    .four {
+    }
+    .five {
+    }
+}
